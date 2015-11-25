@@ -1,8 +1,10 @@
 import os
 from pelican import signals
 
+
 def get_content_path(pelican):
     return pelican.settings.get('PATH')
+
 
 def list2comments(generator):
     comments_path = generator.settings.get('COMMENTS_PATH', 'comments')
@@ -24,6 +26,7 @@ def list2comments(generator):
                     comments[filename] = comment.strip()
 
         article.comments = comments
+
 
 def register():
     signals.article_generator_finalized.connect(list2comments)

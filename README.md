@@ -1,7 +1,15 @@
 # list2comments
 
+[![Build Status](https://travis-ci.org/gyKa/pelican-list2comments.svg)](https://travis-ci.org/gyKa/pelican-list2comments)
+
 Plugin reads static comments from the file and prepare them as a *key-value*
 list for the article.
+
+## Development requirements
+
+* PEP8
+
+`pep install -r dev-requirements.txt`
 
 ## Installation
 
